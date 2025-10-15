@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex items-center justify-center h-full">
-      <div className="bg-white w-full max-w-[327px] border rounded-[20px] p-6">
+      <div className="bg-white w-full max-w-[327px] border rounded-[20px] p-6 flex gap-6 flex-col shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
         <Image
           src="/illustration-article.svg"
           alt="Illustration of an article"
@@ -17,9 +17,7 @@ export default function Home() {
           <div>Title</div>
           <div>Description</div>
         </div>
-        <div>
-          Author
-        </div>
+        <div>Author</div>
       </div>
     </main>
   );
