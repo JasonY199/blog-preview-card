@@ -19,7 +19,7 @@ export default function Home() {
             <div className="text-xs lg:text-sm font-medium">
               Published 21 Dec 2023
             </div>
-            <div className="text-xl lg:text-2xl font-extrabold">
+            <div className="text-xl lg:text-2xl font-extrabold cursor-pointer hover:text-brand-yellow">
               HTML & CSS foundations
             </div>
             <div className="text-sm lg:text-base font-medium text-gray-500">
