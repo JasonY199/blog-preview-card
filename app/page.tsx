@@ -19,13 +19,13 @@ export default function Home() {
             <div className="text-xs lg:text-sm font-medium">
               Published 21 Dec 2023
             </div>
-            <div className="text-xl lg:text-2xl font-extrabold cursor-pointer hover:text-brand-yellow">
+            <h1 className="text-xl lg:text-2xl font-extrabold cursor-pointer hover:text-brand-yellow">
               HTML & CSS foundations
-            </div>
-            <div className="text-sm lg:text-base font-medium text-gray-500">
+            </h1>
+            <p className="text-sm lg:text-base font-medium text-gray-500">
               These languages are the backbone of every website, defining
               structure, content, and presentation.
-            </div>
+            </p>
           </div>
         </div>
         <div className="flex gap-3 items-center">
