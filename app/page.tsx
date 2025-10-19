@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex items-center justify-center min-h-screen p-6">
-      <div className="bg-white w-full max-w-[327px] lg:max-w-[384px] border rounded-[20px] p-6 flex gap-6 flex-col shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-gray-950 leading-[1.5]">
+      <article className="bg-white w-full max-w-[327px] lg:max-w-[384px] border rounded-[20px] p-6 flex gap-6 flex-col shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-gray-950 leading-[1.5]">
         <Image
           src="/illustration-article.svg"
           alt="Illustration of an article"
@@ -13,12 +13,12 @@ export default function Home() {
         />
         <div>
           <div className="flex flex-col gap-3">
-            <div className="text-xs lg:text-sm font-extrabold rounded bg-brand-yellow py-1 px-3 w-min">
+            <span className="text-xs lg:text-sm font-extrabold rounded bg-brand-yellow py-1 px-3 w-min">
               Learning
-            </div>
-            <div className="text-xs lg:text-sm font-medium">
+            </span>
+            <time className="text-xs lg:text-sm font-medium">
               Published 21 Dec 2023
-            </div>
+            </time>
             <h1 className="text-xl lg:text-2xl font-extrabold cursor-pointer hover:text-brand-yellow">
               HTML & CSS foundations
             </h1>
@@ -28,19 +28,17 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex gap-3 items-center">
-          <div>
-            <Image
-              src="/image-avatar.webp"
-              alt="Profile picture of Greg Hooper"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-          </div>
-          <div className="text-sm font-extrabold">Greg Hooper</div>
-        </div>
-      </div>
+        <footer className="flex gap-3 items-center">
+          <Image
+            src="/image-avatar.webp"
+            alt="Profile picture of Greg Hooper"
+            width={32}
+            height={32}
+            className="rounded-full"
+          />
+          <span className="text-sm font-extrabold">Greg Hooper</span>
+        </footer>
+      </article>
     </main>
   );
 }
